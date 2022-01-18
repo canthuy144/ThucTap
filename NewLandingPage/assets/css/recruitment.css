@@ -1,0 +1,25 @@
+
+.recruit-contents h2 {
+    font-size: 17px;
+    color: #001a33;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.recruit-content{
+    /* border: 1px solid rgb(114, 111, 111); */
+    border-radius: 10px;
+    background-color: #e8edf3de;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.recruit-contents .recruit-content p{
+    color: #111111;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+.recruit-contents .recruit-content span{
+    margin-left: 15px;
+    font-weight: bold;
+}

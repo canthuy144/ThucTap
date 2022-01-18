@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" href="datepicker.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+    <script src="bootstrap-datepicker.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="myDatePicker" style="margin-top: 50px;">
+            <input id="txtTU_NGAY" type="text" class="date start" /> to
+            <input id="txtDEN_NGAY" type="text" class="date end" />
+            <button id="timKiem" class="btn btn-outline-dark"> Tìm kiếm </button>
+        </div>
+
+        <h3>BẢNG HÓA ĐƠN</h3>
+        <div>
+            <table id="table_product" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Mã hóa đơn</th>
+                        <th scope="col">Tên khách hàng</th>
+                        <th scope="col">Tổng tiền</th>
+                        <th scope="col">Ngày thanh toán</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HD001</td>
+                        <td>Nguyễn Văn Đông</td>
+                        <td>5.000.000 vnđ</td>
+                        <td id="0" class="time"></td>
+                    </tr>
+                    <tr>
+                        <td>HD002</td>
+                        <td>Nguyễn Văn Sơn</td>
+                        <td>3.000.000 vnđ</td>
+                        <td id="1" class="time"></td>
+                    </tr>
+                    <tr>
+                        <td>HD003</td>
+                        <td>Nguyễn Văn Hoàng</td>
+                        <td>9.000.000 vnđ</td>
+                        <td id="2" class="time"></td>
+                    </tr>
+                    <tr>
+                        <td>HD004</td>
+                        <td>Nguyễn Văn Kiên</td>
+                        <td>8.000.000 vnđ</td>
+                        <td id="3" class="time"></td>
+                    </tr>
+                    <tr>
+                        <td>HD005</td>
+                        <td>Nguyễn Văn Trung</td>
+                        <td>2.000.000 vnđ</td>
+                        <td id="4" class="time"></td>
+                    </tr>
+                    <tr>
+                        <td>HD006</td>
+                        <td>Nguyễn Văn Đông</td>
+                        <td>1.000.000 vnđ</td>
+                        <td id="5" class="time"></td>
+                    </tr>
+                    <tr>
+                        <td>HD007</td>
+                        <td>Nguyễn Văn Tú</td>
+                        <td>5.000.000 vnđ</td>
+                        <td id="6" class="time"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="date.js"></script>
+
+</body>
+
+</html>

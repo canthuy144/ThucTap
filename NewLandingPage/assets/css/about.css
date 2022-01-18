@@ -1,0 +1,91 @@
+
+
+.service-area .service-bg{
+    height: 370px; 
+    background-image: linear-gradient(to right,#6fbcfe 30%,#6fbcfe 70%);
+}
+
+.service-area .services-caption .service-icon img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.service-area .services-caption {
+    padding: 40px 45px 10px;
+    height: 550px;
+}
+.services-caption .service-cap p {
+    line-height: 1.5;
+}
+
+.about-area .about-caption p img {
+    width: 90%;
+}
+.about-area .about-caption p span {
+    font-style: italic;
+    margin-left: 300px;
+}
+.about-area .about-caption p a{
+    cursor: pointer;
+}
+.about-area .about-caption p .img-content{
+    margin-left: 5rem;
+}
+#trip1, #trip2, #trip3 {
+    display: none;
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .service-area .services-caption .service-cap h4 a{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .service-area .services-caption .service-cap .mt-40 {
+        margin-top: 20px;
+    }
+    .service-area .services-caption .service-cap .mt-150{
+        margin-top: 190px;
+    }
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-area .about-caption p span{
+        margin-left: 50px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .about-area .about-caption p .img-content{
+        margin-left: 0rem;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .about-area .about-caption p span{
+        margin-left: 50px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .about-area .about-caption p .img-content{
+        margin-left: 0rem;
+    }
+    .ml-100{
+        margin-left: 0px;
+    }
+}
+@media(max-width:575px) {
+    .about-area .about-caption p span{
+        margin-left: 10px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .ml-100{
+        margin-left: 0px;
+    }
+    .about-area .about-caption p .img-content{
+        margin-left: 0rem;
+    }
+}

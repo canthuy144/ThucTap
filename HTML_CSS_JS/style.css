@@ -1,0 +1,20 @@
+table {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.detail {
+    display: none;
+    background-color: bisque;
+    height: 400px;
+    text-align: center;
+}
+
+.modal-body {
+    text-align: start;
+}

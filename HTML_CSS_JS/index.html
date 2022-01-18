@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>BẢNG SẢN PHẨM</h3>
+        <table id="table_product" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Mã</th>
+                    <th scope="col">Tên SP</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Giá tiền</th>
+                    <th scope="col">Loại</th>
+                    <th scope="col">Mô tả</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Samsung</td>
+                    <td>3</td>
+                    <td>5.000.000 vnđ</td>
+                    <td>Điện thoại</td>
+                    <td>Điện thoại di động</td>
+                    <td>
+                        <button type="button" class="btn-delete btn btn-outline-info"> Delete </button>
+                        <button type="button" class="myBtn btn btn-outline-info" data-toggle="modal"> Detail </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Oppo</td>
+                    <td>1</td>
+                    <td>4.000.000 vnđ</td>
+                    <td>Điện thoại</td>
+                    <td>Điện thoại di động</td>
+                    <td>
+                        <button type="button" class="btn-delete btn btn-outline-info"> Delete </button>
+                        <button type="button" class="myBtn btn btn-outline-info" data-toggle="modal"> Detail </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Iphone</td>
+                    <td>1</td>
+                    <td>8.000.000 vnđ</td>
+                    <td>Điện thoại</td>
+                    <td>Điện thoại di động</td>
+                    <td>
+                        <button type="button" class="btn-delete btn btn-outline-info"> Delete </button>
+                        <button type="button" class="myBtn btn btn-outline-info" data-toggle="modal"> Detail </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Chi tiết sản phẩm</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Mã sản phẩm: <span id="idSP"></span></p>
+                        <p>Tên sản phẩm: <span id="tenSP"></span></p>
+                        <p>Giá: <span id="giaSP"></span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
